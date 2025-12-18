@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivesh IoT Smart Device</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Nivesh IoT</div>
+    <ul class="nav-links">
+     
+      <li><button id="registerBtn" class="btn-register">Register</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Smarter Devices for a Smarter Future 🌐</h1>
+      <p>Monitor your environment with IoT sensors. Real-time analytics, easy setup, and secure cloud storage.</p>
+      <button id="learnMore" class="btn-primary">Learn More</button>
+    </div>
+    <div class="hero-image">
+      <img src="iot.jpg" alt="IoT Device">
+    </div>
+  </section>
+
+  <!-- Video Section -->
+<section class="video-section">
+  <h2>Watch Our IoT Device in Action</h2>
+  <div class="video-container">
+    <iframe width="100%" height="100%" 
+      src="https://www.youtube.com/embed/B6CXAGEoYeM?autoplay=1&mute=1&loop=1&playlist=B6CXAGEoYeM" 
+      title="IoT Device Demo" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="">
+        <h3>Real-time Monitoring</h3>
+        <p>Track environmental data in real-time through sensors and cloud sync.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+        <h3>AI Insights</h3>
+        <p>Smart anomaly detection using AI algorithms to predict failures early.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/744/744465.png" alt="">
+        <h3>Cloud Dashboard</h3>
+        <p>Access all data securely from any device using our intuitive dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Popup -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Register For Contect Us </h2>
+      <form id="registerForm">
+        <label>Vendor Name:</label>
+        <input type="text" id="vendor" required>
+
+        <label>Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Phone:</label>
+        <input type="text" id="phone" required>
+
+        <label>City:</label>
+        <input type="text" id="city">
+
+        <label>Password:</label>
+        <input type="password" id="password" required>
+
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Nivesh IoT | Smart Monitoring for Smarter Living</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
